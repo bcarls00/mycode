@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 import os
-import shutils
+import shutil
 
 def main():
     with open("/home/student/mycode/project/sources/master.conf", "r") as source:
@@ -15,30 +15,30 @@ def main():
 
             for line in source:
                 intf = line.split(" ")
-                if "vlan" in source.lower and intf[2] is True:
-                    print(f"interface vlan {intf[2]}")
-                    if intf[3] is True:
-                        print(f"ip address {intf[3]} {intf[4]}", file=config)
+                if "vlan" in line.lower():
+                    print(f"interface vlan {intf[1]}", file=config)
+                    print(f"ip address {intf[3]} {intf[4]}", file=config)
                     print("exit", file=config)
-
+                
+                
+  
 #assign ports fa
 
-            for line in source:
-                if "fa" in source.lower:
+                if "fa" in line.lower():
                     intf = line.split(" ")
                     print(f"interface {intf[0]} {intf[1]}\n", file=config)
-                    if intf[3].lower == "yes":
+                    if intf[3].lower() == "yes":
                         print(f"no shutdown", file=config)
                     else:
                         print("shutdown", file=config)
                     
-                    if intf[4] is True:
-                        print(f"swithcport mode access\nswitchport access vlan {intf[4]}", file=config)
+                    if intf[4] == "yes":
+                        print(f"swithcport mode access\nswitchport access vlan {intf[5]}", file=config)
                     
                     print("exit", file=config)
                 
 #assign ports gi
-                if "gi" in source.lower:
+                if "gi" in line.lower:
                     intf = line.split(" ")
                     print(f"interface {intf[0]} {intf[1]}\n", file=config)
                     if intf[3].lower == "yes":
@@ -46,12 +46,13 @@ def main():
                     else:
                         print("shutdown", file=config)
                     
-                    if intf[4] is True:
-                        print(f"swithcport mode access\nswitchport access vlan {intf[4]}", file=config)
+                    if intf[4] == "yes":
+                        print(f"swithcport mode access\nswitchport access vlan {intf[5]}", file=config)
                     
                     print("exit", file=config)
 
 
+main()
 
 
 

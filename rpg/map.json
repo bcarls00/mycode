@@ -1,0 +1,31 @@
+{
+
+            "Hall" : {
+                  "south" : "Kitchen",
+                  "east"  : "Dining Room",
+                  "item"  : "key"
+                },
+
+            "Kitchen" : {
+                  "north" : "Hall",
+                  "item"  : "monster"
+                },
+            "Dining Room" : {
+                  "west" : "Hall",
+                  "south" : "Hallway",
+                  "item" : "potion"
+                },
+            "Hallway" : {
+                "south" : "Garden",
+                "north" : "Dining Room",
+                "east" : "Closet",
+                "item" : "Floating Skull"
+                },
+            "Closet" : {
+                "west" : "Hallway",
+                "item" : "gun"
+                },
+            "Garden" : {
+                  "north" : "Dining Room"
+            }
+}
