@@ -2,7 +2,8 @@
 # AFTER RUNNING CREATE_CONF.PY THE OUTPUT FILE WILL BE { SWITCH ID }.CONF
 hostname: switch1
 username: admin
-enable password: passpass 
+password: pass
+enable: passpass 
 spanning_tree_mode:
 vlan_number_1: 99 ip: 10.0.0.1  255.255.255.0
 vlan_number_2: 100 ip: 10.0.0.2 255.255.255.0

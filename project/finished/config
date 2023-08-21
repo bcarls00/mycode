@@ -1,4 +1,405 @@
 en
 conf t
+hostname switch1
+
+username admin password pass
+enable secret passpass
+interface vlan 99
+ip address 10.0.0.1 
+exit
+interface vlan 100
+ip address 10.0.0.2 255.255.255.0
+
+exit
+interface vlan 56
+ip address 10.0.0.3 255.255.255.0
+
+exit
+interface vlan 35
+ip address 10.0.0.4 255.255.255.0
+
+exit
+interface vlan 48
+ip address 10.0.0.5 255.255.255.0
+
+exit
+interface vlan 990
+ip address 10.0.0.6 255.255.255.0
+
+exit
+interface fa0/1
+shutdown
+swithcport mode access
+switchport access vlan 56,100,35
+
+exit
+interface fa0/2
+shutdown
+exit
+interface fa0/3
+shutdown
+exit
+interface fa0/4
+shutdown
+exit
+interface fa0/5
+no shutdown
+exit
+interface fa0/6
+shutdown
+exit
+interface fa0/7
+no shutdown
+exit
+interface fa0/8
+shutdown
+exit
+interface fa0/9
+no shutdown
+exit
+interface fa0/10
+shutdown
+exit
+interface fa0/11
+no shutdown
+exit
+interface fa0/12
+shutdown
+exit
+interface fa0/13
+no shutdown
+exit
+interface fa0/14
+shutdown
+exit
+interface fa0/15
+no shutdown
+exit
+interface fa0/16
+shutdown
+exit
+interface fa0/17
+no shutdown
+exit
+interface fa0/18
+shutdown
+exit
+interface fa0/20
+no shutdown
+exit
+interface fa0/21
+no shutdown
+swithcport mode access
+switchport access vlan 100
+
+exit
+interface fa0/22
+shutdown
+exit
+interface fa0/23
+no shutdown
+exit
+interface fa0/24
+shutdown
+exit
+interface gi0/1
+no shutdown
+exit
+interface gi0/2
+shutdown
+exit
+exit
+copy run start
+
+
 en
 conf t
+hostname switch1
+
+username admin password pass
+enable secret passpass
+interface vlan 99
+ip address 10.0.0.1 
+exit
+interface vlan 100
+ip address 10.0.0.2 255.255.255.0
+
+exit
+interface vlan 56
+ip address 10.0.0.3 255.255.255.0
+
+exit
+interface vlan 35
+ip address 10.0.0.4 255.255.255.0
+
+exit
+interface vlan 48
+ip address 10.0.0.5 255.255.255.0
+
+exit
+interface vlan 990
+ip address 10.0.0.6 255.255.255.0
+
+exit
+interface fa0/1
+shutdown
+swithcport mode access
+switchport access vlan 56,100,35
+
+exit
+interface fa0/2
+shutdown
+exit
+interface fa0/3
+shutdown
+exit
+interface fa0/4
+shutdown
+exit
+interface fa0/5
+no shutdown
+exit
+interface fa0/6
+shutdown
+exit
+interface fa0/7
+no shutdown
+exit
+interface fa0/8
+shutdown
+exit
+interface fa0/9
+no shutdown
+exit
+interface fa0/10
+shutdown
+exit
+interface fa0/11
+no shutdown
+exit
+interface fa0/12
+shutdown
+exit
+interface fa0/13
+no shutdown
+exit
+interface fa0/14
+shutdown
+exit
+interface fa0/15
+no shutdown
+exit
+interface fa0/16
+shutdown
+exit
+interface fa0/17
+no shutdown
+exit
+interface fa0/18
+shutdown
+exit
+interface fa0/20
+no shutdown
+exit
+interface fa0/21
+no shutdown
+swithcport mode access
+switchport access vlan 100
+
+exit
+interface fa0/22
+shutdown
+exit
+interface fa0/23
+no shutdown
+exit
+interface fa0/24
+shutdown
+exit
+interface gi0/1
+no shutdown
+exit
+interface gi0/2
+shutdown
+exit
+exit
+copy run start
+
+
+en
+conf t
+hostname switch1
+
+username admin password pass
+enable secret passpass
+interface vlan 99
+ip address 10.0.0.1 
+exit
+interface vlan 100
+ip address 10.0.0.2 255.255.255.0
+
+exit
+interface vlan 56
+ip address 10.0.0.3 255.255.255.0
+
+exit
+interface vlan 35
+ip address 10.0.0.4 255.255.255.0
+
+exit
+interface vlan 48
+ip address 10.0.0.5 255.255.255.0
+
+exit
+interface vlan 990
+ip address 10.0.0.6 255.255.255.0
+
+exit
+interface fa0/1
+shutdown
+swithcport mode access
+switchport access vlan 56,100,35
+
+exit
+interface fa0/2
+shutdown
+swithcport mode access
+switchport access vlan 99
+
+exit
+interface fa0/3
+shutdown
+swithcport mode access
+switchport access vlan 56
+
+exit
+interface fa0/4
+shutdown
+swithcport mode access
+switchport access vlan 35
+
+exit
+interface fa0/5
+no shutdown
+swithcport mode access
+switchport access vlan 48
+
+exit
+interface fa0/6
+shutdown
+swithcport mode access
+switchport access vlan 990
+
+exit
+interface fa0/7
+no shutdown
+swithcport mode access
+switchport access vlan 990
+
+exit
+interface fa0/8
+shutdown
+swithcport mode access
+switchport access vlan 990
+
+exit
+interface fa0/9
+no shutdown
+swithcport mode access
+switchport access vlan 48
+
+exit
+interface fa0/10
+shutdown
+swithcport mode access
+switchport access vlan 48
+
+exit
+interface fa0/11
+no shutdown
+swithcport mode access
+switchport access vlan 99
+
+exit
+interface fa0/12
+shutdown
+swithcport mode access
+switchport access vlan 99
+
+exit
+interface fa0/13
+no shutdown
+swithcport mode access
+switchport access vlan 99
+
+exit
+interface fa0/14
+shutdown
+swithcport mode access
+switchport access vlan 99
+
+exit
+interface fa0/15
+no shutdown
+swithcport mode access
+switchport access vlan 99
+
+exit
+interface fa0/16
+shutdown
+swithcport mode access
+switchport access vlan 100
+
+exit
+interface fa0/17
+no shutdown
+swithcport mode access
+switchport access vlan 100
+
+exit
+interface fa0/18
+shutdown
+swithcport mode access
+switchport access vlan 100
+
+exit
+interface fa0/20
+no shutdown
+swithcport mode access
+switchport access vlan 100
+
+exit
+interface fa0/21
+no shutdown
+swithcport mode access
+switchport access vlan 100
+
+exit
+interface fa0/22
+shutdown
+swithcport mode access
+switchport access vlan 56
+
+exit
+interface fa0/23
+no shutdown
+swithcport mode access
+switchport access vlan 35,56
+
+exit
+interface fa0/24
+shutdown
+swithcport mode access
+switchport access vlan 100,35,99
+
+exit
+interface gi0/1
+no shutdown
+exit
+interface gi0/2
+shutdown
+exit
+exit
+copy run start
+
+

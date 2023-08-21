@@ -1,0 +1,112 @@
+Hostname: {hostname}
+Password: {pass}
+Enable Password: {enpass}
+
+
+Hostname: {hostname}
+Password: {pass}
+Enable Password: {enpass}
+
+
+Hostname: {hostname}
+Password: {pass}
+Enable Password: {enpass}
+
+
+Hostname: {hostname}
+Password: {pass}
+Enable Password: {enpass}
+
+
+Hostname: {hostname}
+Password: {pass}
+Enable Password: {enpass}
+
+
+Hostname: {hostname}
+Password: {pass}
+Enable Password: {enpass}
+
+
+Hostname: {hostname}
+Password: {pass}
+Enable Password: {enpass}
+
+
+Hostname: {hostname}
+Password: {pass}
+Enable Password: {enpass}
+
+
+Hostname: {hostname}
+Password: {pass}
+Enable Password: {enpass}
+
+
+Hostname: {hostname}
+Password: {pass}
+Enable Password: {enpass}
+
+
+Hostname: {hostname}
+Password: {pass}
+Enable Password: {enpass}
+
+
+Hostname: switch1
+
+Password: password:
+Enable Password: passpass
+
+
+Hostname: switch1
+
+Password: pass
+
+Enable Password: 
+
+
+
+Hostname: switch1
+
+Password: pass
+
+Enable Password: passpass
+
+
+Hostname: switch1
+
+Password: pass
+Enable Password: passpass
+
+
+Hostname: switch1
+
+Password: pass
+Enable Password: passpass
+
+
+Hostname: switch1
+
+Password: pass
+Enable Password: passpass
+
+
+Hostname: switch1
+
+Password: pass
+Enable Password: passpass
+
+
+Hostname: switch1
+
+Password: pass
+Enable Password: passpass
+
+
+Hostname: switch1
+
+Password: pass
+Enable Password: passpass
+
+
