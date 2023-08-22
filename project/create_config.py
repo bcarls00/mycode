@@ -1,43 +1,42 @@
 #!/usr/bin/python3
 
-import os
-import shutil
 
-def main():
-    enpass = input("current switch enable password: ")
 
-    with open("/home/student/mycode/project/sources/master.conf", "r") as source:
+def create_c(src, dest):
+    
+    import os
+    import shutil
+    import csv
+    
+    with open(src, "r") as source:
 
 #Create config file to paste to
 
         os.system("touch /home/student/mycode/project/finished/config")
 
         with open("/home/student/mycode/project/finished/config", "a") as config:
-            if enpass is True:
-                print(f"en\n{enpass}\n\nconf t", file=config)
-            else:
-                print("en\nconf t", file=config)
+            print("en\nconf t", file=config)
 
 #create and assign vlans
 
             for line in source:
-                intf = line.split(" ")
+                intf = line.split(",")
                 if "vlan" in line.lower():
                     print(f"interface vlan {intf[1]}", file=config)
-                    print(f"ip address {intf[3]} {intf[4]}", file=config)
+                    print(f"ip address {intf[2]} {intf[3]}", file=config)
                     print("exit", file=config)
   
 #assign ports fa
 
                 if "fa" in line.lower():
                     print(f"interface {intf[0]}", file=config)
-                    if intf[2].lower() == "on":
+                    if intf[1].lower() == "on":
                         print("no shutdown", file=config)
                     else:
                         print("shutdown", file=config)
                     
-                    if intf[4].lower() == "yes":
-                        print(f"swithcport mode access\nswitchport access vlan {intf[5]}", file=config)
+                    if intf[2].lower() == "on":
+                        print(f"swithcport mode access\nswitchport access vlan {intf[3]}", file=config)
                     
                     print("exit", file=config)
                 
@@ -45,13 +44,13 @@ def main():
 
                 if "gi" in line.lower():
                     print(f"interface {intf[0]}", file=config)
-                    if intf[2].lower() == "on":
+                    if intf[1].lower() == "on":
                         print(f"no shutdown", file=config)
                     else:
                         print("shutdown", file=config)
                     
-                    if intf[4].lower == "yes":
-                        print(f"switchport mode access\nswitchport access vlan {intf[5]}", file=config)
+                    if intf[2].lower == "on":
+                        print(f"switchport mode access\nswitchport access vlan {intf[3]}", file=config)
                     
                     print("exit", file=config)
 
@@ -86,10 +85,8 @@ def main():
             print("copy run start\n\n", file=config)
 
 #copy finished config to hostname.conf file and move the masterfile to the bu_confs directory with new name
+     
+    destfile = dest + hostname + ".conf"
 
-#    shutil.move("mv /home/student/mycode/project/finished/config", "/home/student/mycode/project/finished/{hostname}.conf")
-#    shutil.copy("cp /home/student/mycode/project/sources/master.conf", "/home/student/mycode/project/bu_confs/master_{hostname}.conf")
-
-main()
-
-
+    shutil.move("/home/student/mycode/project/finished/config", destfile)
+    shutil.copy("/home/student/mycode/project/sources/master.conf", "/home/student/mycode/project/bu_confs/master_{hostname}.conf")
