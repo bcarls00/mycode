@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+
 from flask import Flask 
 from flask import render_template
 from flask import request
@@ -12,12 +13,14 @@ def index():
 
 @app.route('/process_inputs', methods=['POST'])
 def process_inputs():
-    source = request.form.get('input1')
-    dest = request.form.get('input2')
+    source = request.form.get('source')
+    destination = request.form.get('destination')
 
     # Do something with the inputs, like processing or returning a result
 
-    create_c(source, dest)
+    create_c(source, destination)
+
+    return "Complete!"
 
 if __name__ == '__main__':
     app.run(host="0.0.0.0", port=2224)

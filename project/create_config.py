@@ -1,7 +1,5 @@
 #!/usr/bin/python3
 
-
-
 def create_c(src, dest):
     
     import os
@@ -21,14 +19,14 @@ def create_c(src, dest):
 
             for line in source:
                 intf = line.split(",")
-                if "vlan" in line.lower():
+                if "vlan_" in line.lower():
                     print(f"interface vlan {intf[1]}", file=config)
                     print(f"ip address {intf[2]} {intf[3]}", file=config)
                     print("exit", file=config)
   
 #assign ports fa
 
-                if "fa" in line.lower():
+                if "fa0" in line.lower():
                     print(f"interface {intf[0]}", file=config)
                     if intf[1].lower() == "on":
                         print("no shutdown", file=config)
@@ -42,7 +40,7 @@ def create_c(src, dest):
                 
 #assign ports gi
 
-                if "gi" in line.lower():
+                if "gi0" in line.lower():
                     print(f"interface {intf[0]}", file=config)
                     if intf[1].lower() == "on":
                         print(f"no shutdown", file=config)
@@ -89,4 +87,6 @@ def create_c(src, dest):
     destfile = dest + hostname + ".conf"
 
     shutil.move("/home/student/mycode/project/finished/config", destfile)
-    shutil.copy("/home/student/mycode/project/sources/master.conf", "/home/student/mycode/project/bu_confs/master_{hostname}.conf")
+    shutil.copy("/home/student/mycode/project/sources/source.csv", "/home/student/mycode/project/bu_confs/source_{hostname}.csv")
+
+create_c("/home/student/mycode/project/sources/source.csv", "/home/student/mycode/project/finished/")

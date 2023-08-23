@@ -120,3 +120,88 @@ Password: passpass
 Enable Password: passpass
 
 
+Hostname: switch1
+Password: passpass
+Enable Password: passpass
+
+
+Hostname: switch1
+Password: passpass
+Enable Password: passpass
+
+
+Hostname: switch1
+Password: passpass
+Enable Password: passpass
+
+
+Hostname: switch1
+Password: passpass
+Enable Password: passpass
+
+
+Hostname: switch1
+Password: passpass
+Enable Password: passpass
+
+
+Hostname: switch1
+Password: passpass
+Enable Password: passpass
+
+
+Hostname: switch1
+Password: passpass
+Enable Password: passpass
+
+
+Hostname: switch1
+Password: passpass
+Enable Password: passpass
+
+
+Hostname: switch1
+Password: passpass
+Enable Password: passpass
+
+
+Hostname: switch1
+Password: passpass
+Enable Password: passpass
+
+
+Hostname: switch1
+Password: passpass
+Enable Password: passpass
+
+
+Hostname: switch1
+Password: passpass
+Enable Password: passpass
+
+
+Hostname: switch1
+Password: passpass
+Enable Password: passpass
+
+
+Hostname: switch1
+Password: passpass
+Enable Password: passpass
+
+
+Hostname: switch1
+Password: passpass
+Enable Password: passpass
+
+
+Hostname: switch1
+Password: passpass
+Enable Password: passpass
+
+
+Hostname: switch1
+Password: passpass
+Enable Password: passpass
+
+

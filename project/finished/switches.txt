@@ -1,0 +1,31 @@
+2023-08-23 22:51:11
+hostname: Switch
+Password: passsp
+VLANs: ['Vlan1']
+Disabled Ports: ['gGigabitEthernet0/2']
+2023-08-23 22:56:08
+hostname: switch1
+Password: passssss
+VLANs: ['access', 'access', 'access', 'access', 'access', 'access', 'access', 'access', 'access', 'access', 'access', 'access', 'Vlan35', 'Vlan48', 'Vlan56', 'Vlan99', 'Vlan100', 'Vlan990']
+Disabled Ports: ['fFastEthernet0/13', 'fFastEthernet0/14', 'fFastEthernet0/15', 'fFastEthernet0/16', 'fFastEthernet0/17', 'fFastEthernet0/18', 'fFastEthernet0/19', 'fFastEthernet0/2', 'fFastEthernet0/21', 'fFastEthernet0/22', 'fFastEthernet0/23', 'fFastEthernet0/24', 'gGigabitEthernet0/2']
+2023-08-23 22:58:51
+hostname: switch1
+Password: pas
+VLANs: ['Vlan35', 'Vlan48', 'Vlan56', 'Vlan99', 'Vlan100', 'Vlan990']
+Disabled Ports: ['f13', 'f14', 'f15', 'f16', 'f17', 'f18', 'f19', 'f2', 'f21', 'f22', 'f23', 'f24', 'g2']
+
+
+2023-08-23 22:59:15
+hostname: switch1
+Password: p
+VLANs: ['Vlan35', 'Vlan48', 'Vlan56', 'Vlan99', 'Vlan100', 'Vlan990']
+Disabled Ports: ['f13', 'f14', 'f15', 'f16', 'f17', 'f18', 'f19', 'f2', 'f21', 'f22', 'f23', 'f24', 'g2']
+
+
+2023-08-23 23:01:14
+hostname: switch1
+Password: less
+VLANs: ['35', '48', '56', '99', '100', '990']
+Disabled Ports: ['f0/13', 'f0/14', 'f0/15', 'f0/16', 'f0/17', 'f0/18', 'f0/19', 'f0/20', 'f0/21', 'f0/22', 'f0/23', 'f0/24', 'g0/2']
+
+
