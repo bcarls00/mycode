@@ -14,7 +14,7 @@ def readit(source,destination):
             for line in source:
                 word = line.split()
                 if "hostname" in line.lower():
-                    print("hostname: " + word[1], file=destination)
+                    print("Hostname: " + word[1], file=destination)
                 elif "Vlan" in line:
                     v.append(word[1].strip("Vlan"))
                 elif "fastethernet" in line.lower():
@@ -25,9 +25,13 @@ def readit(source,destination):
                     d.append(currentport)
 
             print(f"Password: {password}",file=destination)
-            print(f"VLANs: {v}", file=destination)
-            print(f"Disabled Ports: {d}\n\n", file=destination)
-
+            print("VLANs: ", end=" ", file=destination)
+            for vlan in v:
+                print(vlan, end=" ", file=destination)
+            print(f"\nDisabled Ports: ", end=" ", file=destination)
+            for port in d:
+                print(port, end=" ", file=destination)
+            print("\n\n", file=destination)
 
 readit("sources/readme.conf", "finished/switches.txt")
 
