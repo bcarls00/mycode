@@ -1,10 +1,8 @@
 #!/usr/bin/python3
 
-def readit(source,destination):
+def readit(source,destination,cpassword):
 
     from datetime import datetime
-
-    password = input("Current switch password: ")
 
     with open(source, "r") as source:
         with open(destination, "a") as destination:
@@ -24,7 +22,7 @@ def readit(source,destination):
                 elif "shut" in line.lower():
                     d.append(currentport)
 
-            print(f"Password: {password}",file=destination)
+            print(f"Password: {cpassword}",file=destination)
             print("VLANs: ", end=" ", file=destination)
             for vlan in v:
                 print(vlan, end=" ", file=destination)
@@ -33,7 +31,7 @@ def readit(source,destination):
                 print(port, end=" ", file=destination)
             print("\n\n", file=destination)
 
-readit("sources/readme.conf", "finished/switches.txt")
+readit("sources/readme.conf", "finished/switches.txt", "passpass")
 
 
 
